@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Domain Registration India - Domain Search | Domain Name Registration</title>
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+		<script src="js/jQuery.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				var selectAll = false;
+				$("#selectAll").click(function(){
+					if(selectAll == false)
+					{
+						$(".sAll").prop("checked",true);
+						selectAll = true;
+						$("#selectAll").html("Unselect All");
+					}
+					else
+					{
+						$(".sAll").prop("checked",false);
+						selectAll=false;
+						$("#selectAll").html("Select All");
+					}
+				});
+				
+				var selectAll2 = false;
+				$("#selectAll2").click(function(){
+					if(selectAll2 == false)
+					{
+						$(".sAll2").prop("checked",true);
+						selectAll2 = true;
+						$("#selectAll2").html("Unselect All");
+					}
+					else
+					{
+						$(".sAll2").prop("checked",false);
+						selectAll2=false;
+						$("#selectAll2").html("Select All");
+					}
+				});
+				$(window).resize(function(){
+					var windowWidth = $(window).width();
+					if(windowWidth < 960)
+					{
+						$("#outerMainWrapper").css("width",960);
+					}
+					else
+					{	
+						var wi = $(window).width();
+						$("#outerMainWrapper").css("width",wi);
+					}
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div id="outerMainWrapper">
+			<div id="outerHeaderTopBackground">
+				<div id="upperHeadRight">
+					<input type="button" value="MY ACCOUNT" />
+					<input type="button" value="LIVE CHAT" />
+				</div>
+			</div>
+			<div id="outerHeaderBottomBackground">
+			</div>
+			<div id="page2DomainNameForm">
+			</div>
+			<div id="page2OuterFooterBackground">
+			</div>
+		</div>
+		
+		
+		<!--Main Wrapper-->
+		<div id="mainWrapper">
+			
+			<!--Header Section-->
+			<header>
+				<div id="upperHead">
+					<a href="index.html"><img src="images/BR-logo.png"></a>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="getADomain.html">GET A DOMAIN</a>
+							<ul>
+								<li><a href=#>Domain Name Registration</a></li>
+								<li><a href=#>Bulk Domain Registration</a></li>
+								<li><a href=#>Premium Domains</a></li>
+								<li><a href=#>Domain Name Prices</a></li>
+								<li><a href=#>Domain Transfer</a></li>
+								<li><a href=#>Bulk Domain Transfer</a></li>
+								<li><a href=#>Domain WHOIS Lookup</a></li>
+								<li><a href=#>Name Suggestion Tool</a></li>
+								<li><a href=#>Free Addons</a></li>
+							</ul>
+						</li>
+						<li><a href="#">GET HOSTING</a>
+							<ul>
+								<li><a href=#>Linux Hosting</a></li>
+								<li><a href=#>Windows Hosting</a></li>
+								<li><a href=#>WordPress Hosting</a></li>
+								<li><a href=#>CMS Hosting</a></li>
+								<li><a href=#>Ecommerce Hosting</a></li>
+								<li><a href=#>Linux Reseller Hosting</a></li>
+								<li><a href=#>Windows Reseller Hosting</a></li>
+							</ul>
+						</li>
+						<li><a href="#">GET A VPS</a>
+							<ul>
+								<li><a href=#>VPS Hosting</a></li>
+							</ul>
+						</li>
+						<li><a href="#">BUILD A WEBSITE</a>
+							<ul>
+								<li><a href=#>Do It yourself Website Builder</a></li>
+								<li><a href=#>Find Professional Web Designers</a></li>
+								<li><a href=#>Digicerts and SSL</a></li>
+							</ul>
+						</li>
+						<li><a href="#">GET EMAIL</a>
+							<ul>
+								<li><a href=#>Personal Email</a></li>
+								<li><a href=#>Business Email</a></li>
+							</ul>
+						</li>
+						<li><a href="#">PARTNER WITH US</a>
+							<ul>
+								<li><a href=#>Affiliate Program</a></li>
+								<li><a href=#>Design Xchange Program</a></li>
+								<li><a href=#>Refer a Friend Program</a></li>
+								<li><a href=#>Private Labelled Reseller Program</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			
+			<!--Middle Content Section-->
+			<div id="page2MidContent">
+				<div id="page2DomainNameRegistration">
+					<h1><span>Domain</span> Name Registration</h1>
+					<form method="POST" action="domainResult.html">
+					<table id="page2DNForm">
+						<tr>
+							<td colspan=2>
+								<textarea required rows=10 cols=65 placeholder="To search, enter each domain name on seperate line"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Popular Domain Extensions</p>
+							</td>
+							<td>
+								<p>Other Domain Extensions</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<td><input type="checkbox" class="sAll" value=".net" checked="checked"></td><td>net</td>
+										<td><input type="checkbox" class="sAll" value=".com"></td><td>com</td> 
+										<td><input type="checkbox" class="sAll" value=".biz"></td><td>biz</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="sAll" value=".org"></td><td>org</td> 
+										<td><input type="checkbox" class="sAll" value=".co.in"></td><td>co.in</td> 
+										<td><input type="checkbox" class="sAll" value=".in"></td><td>in</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="sAll" value=".me"></td><td>me</td> 
+										<td><input type="checkbox" class="sAll" value=".org"></td><td>org</td> 
+										<td><input type="checkbox" class="sAll" value=".asia"></td><td>asia</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<td><input type="checkbox" class="sAll2" value=".co"></td><td>co</td> 
+										<td><input type="checkbox" class="sAll2" value=".info"></td><td>info</td>
+										<td><input type="checkbox" class="sAll2" value=".name"></td><td>name</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="sAll2" value=".mobi"></td><td>mobi</td>
+										<td><input type="checkbox" class="sAll2" value=".tv"></td><td>tv</td>
+										<td><input type="checkbox" class="sAll2" value=".ws"></td><td>ws</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="sAll2" value=".bz"></td><td>bz</td> 
+										<td><input type="checkbox" class="sAll2" value=".cc"></td><td>cc</td> 
+										<td><input type="checkbox" class="sAll2" value=".net.in"></td><td>net.in</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#page2DNForm" id="selectAll">Select all</a>
+							</td>
+							<td>
+								<a href="#page2DNForm" id="selectAll2">Select all</a>
+								<a href="#">View More</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan=2>
+								<input type="submit" value="SUBMIT">
+							</td>
+						</tr>
+					</table>
+				</form>
+				</div>
+			</div>
+			
+			<!--Footer Section-->
+			<footer>
+				<!--Footer Upper Part-->
+				<div id="footerUpperSection">
+					<div id="footerUpperLeftPart">
+						<div id="footerUpperTop">
+							<div id="upperTopLeft">
+								<img src="images/contact.png">
+							</div>
+							<div id="upperTopRight">
+								<img src="images/tv.png">
+								<div id="upperTopRightInner">
+									<p>BigRock in the Media</p>
+									<p>See our <a href="#">TV ads</a> and <a href="#">Press Page</a></p>
+								</div>
+							</div>
+						</div>
+						<div id="footerUpperBottom">
+							<div id="upperBottomLeft">
+								<table>
+									<th colspan="2">Need Help?</h2>
+									<tr>
+										<td><a href="#">Contact Us</a></td>
+										<td><a href="#">Documentation</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Tech Support</a></td>
+										<td><a href="#">Report Abuse</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">My Account</a></td>
+										<td><a href="#">Careers</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Legal</a></td>
+										<td><a href="#">Sitemap</a></td>
+									</tr>
+									<tr>
+										<td colspan="2"><a href="#">Privacy</a></td>
+									</tr>
+								</table>
+							</div>
+							<div id="upperBottomRight">
+								
+							</div>
+						</div>
+					</div>
+					<div id="footerUpperRightPart">
+						<div id="footerUpperRightTop">
+							<img src="images/payment.png">
+							<p>We also accept Indian Debit Cards and Net Banking. See all supported <a href="#">payment options</a></p>
+						</div>
+						<div id="footerUpperRightBottom">
+							<table>
+									<th colspan="2">Our Products</h2>
+									<tr>
+										<td><a href="#">Register Domain Names</a></td>
+										<td><a href="#">Web Hosting</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Transfer Domain Names</a></td>
+										<td><a href="#">Linux Hosting</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Digital Certificates</a></td>
+										<td><a href="#">Wordpress Hosting</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Web Design</a></td>
+										<td><a href="#">Joomla Hosting</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Email Hosting</a></td>
+										<td><a href="#">VPS Hosting</a></td>
+									</tr>
+									<tr>
+										<td colspan="2"><a href="#">WHOIS Lookup</a></td>
+									</tr>
+								</table>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div>
+	</body>
+</html>

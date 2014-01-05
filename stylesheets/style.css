@@ -1,0 +1,942 @@
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,400,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300,100,900);
+
+hmtl, body{
+padding:0px;
+margin:0px;
+font-family: 'Raleway', sans-serif;
+}
+
+/*For ie*/
+img{
+border:none;
+}
+
+/*--------BACKGROUND LAYERS--------------------------------------------------------------------*/ 
+ 
+#outerMainWrapper{
+height:100%;
+position:absolute;
+z-index:-10;
+width:100%;
+}
+
+#outerHeaderTopBackground{
+background-color:#FF8800;
+width:100%;
+height:70px;
+}
+
+#upperHeadRight{
+width:300px;
+float:right;
+position:absolute;
+right:0px;
+top:0px;
+z-index:50;
+}
+
+#upperHeadRight input[type="button"]{
+width:150px;
+height:70px;
+border:none;
+float:right;
+background-color:#FF8800;
+color:white;
+border-left:1px solid white;
+}
+
+#upperHeadRight input[type="button"]:hover{
+display:block;
+background-color:white;
+color:#FF8800;
+}
+
+#outerHeaderBottomBackground{
+background-color:#282827;
+width:100%;
+height:30px;
+}
+
+#outerGetDomainNameBackground{
+background-image: url("../images/background.png");
+background-size:cover;
+width:100%;
+height:600px;
+}
+
+#outerBuyWebsiteOrHostingBackground{
+background-color:#857E75;
+width:100%;
+min-height:500px;
+}
+
+#outerCompanyBackground{
+background-color:#f7f3eb;
+width:100%;
+min-height:200px;
+}
+
+#outerHostingBackground{
+background-color:#CC7E00;
+width:100%;
+min-height:500px;
+}
+
+#outerFooterBackground{
+background-color:#31302b;
+width:100%;
+height:1100px;
+}
+ 
+/*-------------MAIN WRAPPER AND HEADER----------------------------------------------------------------------*/ 
+ 
+#mainWrapper{
+/*  border:1px solid black;  */
+/* background-color:orange; */
+width:960px;
+position:relative;
+margin:0px auto;
+}
+
+header{
+/* border:1px solid black; */
+height:110px;
+width:100%;
+}
+
+#upperHead{
+/* border:1px solid black; */
+position:relative;
+height:70px;
+width:960px;
+margin:0px auto;
+}
+
+#upperHead img{
+float:left;
+position:absolute;
+top:5px;
+left:20px;
+}
+
+nav{
+margin-top:5px;
+}
+
+nav a{
+font-family: 'Roboto', sans-serif;
+color:white;
+text-decoration:none;
+}
+
+nav ul ul{
+display:none;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+nav ul{
+display:inline;
+padding:0px 10px;
+list-style:none;
+}
+
+nav ul li{
+float:left;
+margin:0px 15px;
+font-size:14px;
+}
+
+nav ul ul{
+background:#282827;
+position:absolute;
+margin-top:5px;
+padding-top:20px;
+z-index:200;
+}
+
+nav ul ul li{
+float:none;
+height:40px;
+}
+/*-------MIDDLE SECTION--------------------------------------------------------------*/
+
+#midContent{
+/* border:1px solid black; */
+position:relative;
+height:1800px;
+}
+
+#midContent h1{
+font-family: 'Raleway', sans-serif;
+color:white;
+font-size:52px;
+text-align:center;
+margin-bottom:0px;
+}
+
+#midContent h3{
+font-family: 'Raleway', sans-serif;
+color:white;
+font-size:18px;
+font-weight:200;
+margin-top:0px;
+text-align:center;
+}
+
+#getDomainName{
+/* border:1px soild black; */
+height:450px;
+}
+
+#getDomainName h1{
+font-family: 'Raleway', sans-serif;
+color:white;
+font-size:52px;
+font-weight:600;
+text-align:center;
+margin-bottom:0px;
+}
+
+#getDomainName h1 span{
+color:#343B3A;
+}
+
+#getDomainName p{
+font-family: 'Raleway', sans-serif;
+color:white;
+font-size:20px;
+font-weight:200;
+text-align:center;
+margin-top:0px;
+}
+
+#domainForm{
+border:5px solid white;
+border-radius:10px;
+width:600px;
+height:60px;
+margin:0px auto;
+background-color:white;
+z-index:9;
+}
+
+#domainNameInput{
+width:60%;
+float:left;
+height:60px;
+border:none;
+/* border-right:1px solid #CFCFCF ; */
+font-size:24px;
+padding-left:10px
+}
+
+#domainNameInput:focus{
+outline:none;
+}
+
+#domainNameInputBox{
+width:20%;
+float:left;
+height:60px;
+background-color:white;
+/* border-right:1px solid #CFCFCF ; */
+}
+
+#domainNameInputBox p{
+width:80%;
+height:40px;
+margin:20px 0px 0px 0px;
+padding:0px;
+float:left;
+color:#343B3A;
+}
+
+#domainNameInputBox img{
+float:right;
+width:15%;
+margin-top:25px;
+margin-right:5px;
+}
+
+#domainSubmit{
+width:18%;
+border:none;
+height:60px;
+float:right;
+background-color:white;
+font-size:24px;
+color:#FF8800;
+border-radius:5px;
+}
+
+#domainSubmit:hover{
+color:white;
+background-color:#FF8800;
+}
+
+#domainNameChooser{
+display:none;
+position:absolute;
+top:280px;
+left:420px;
+border-radius:10px;
+background-color:white;
+padding:30px 0px 0px 10px;
+width:250px;
+height:240px;
+z-index:5;
+}
+
+#popularExtensions{
+width:250px;
+margin:10px auto;
+}
+
+#popularExtensions label{
+color:blue;
+}
+
+#moreExtensions label{
+color:blue;
+}
+
+#domainNameRates table{
+width:65%;
+margin:20px auto;
+font-family: 'Roboto', sans-serif;
+}
+
+#domainNameRates table td{
+height:60px;
+background-color:white;
+border-radius:5px;
+}
+
+#domainNameRates table td:nth-child(4) p{
+margin-top:10px;
+}
+
+#domainNameRates table td:nth-child(4) h2{
+margin-top:20px;
+}
+
+#domainNameRates table td p{
+margin:10px 0px 0px 0px;
+color:#7C7C7C;
+font-weight:700;
+}
+
+#domainNameRates table td h4{
+margin:0px 0px 0px 40px;
+color:#CFCFCF;
+}
+
+#domainNameRates table td h2{
+margin:0px 0px 0px 28px;
+color:#9DFF00;
+}
+
+#extraLinks{
+width:600px;
+margin:0px auto;
+font-size:12px;
+}
+
+#extraLinkOne{
+float:left;
+color:white;
+}
+
+#extraLinkTwo{
+float:right;
+color:white;
+}
+
+#buyWebsiteOrHosting{
+/* border:1px solid black; */
+position:relative;
+height:500px;
+}
+
+#buyWebsiteOrHosting h1{
+text-align:left;
+margin:35px 0px 0px 30px;
+color:white;
+font-size:40px;
+}
+
+#buyWebsiteOrHosting h3{
+text-align:left;
+margin:0px 0px 0px 30px;
+color:white;
+font-size:16px;
+font-weight:700;
+}
+
+#buyWebsiteOrHosting table{
+width:550px;
+float:left;
+margin:25px 0px 0px 35px;
+border-right:1px solid #cac0b2;
+}
+
+#buyWebsiteOrHosting table tr{
+height:85px;
+}
+
+#buyWebsiteOrHosting table p{
+color:white;
+}
+
+#buyWebsiteOrHostingRight{
+float:right;
+width:250px;
+}
+
+#buyWebsiteOrHostingRight h2{
+color:white;
+font-size:34px;
+font-weight:400
+}
+
+#buyWebsiteOrHostingRight input[type="button"]{
+width:160px;
+height:45px;
+background-color:#857E75;
+color:white;
+border:4px solid white;
+font-size:22px;
+border-radius:3px;
+}
+
+#buyWebsiteOrHostingRight input[type="button"]:hover{
+background-color:white;
+color:#857E75;
+}
+
+#company{
+/* border:1px solid black; */
+position:relative;
+height:200px;
+}
+
+#company img:nth-child(1){
+margin:0px 15px 0px 15px;
+position:absolute;
+top:8px;
+left:20px;
+}
+
+#company img:nth-child(2){
+margin:0px 15px 0px 15px;
+position:absolute;
+top:-7px;
+left:220px;
+}
+
+#company img:nth-child(3){
+margin:0px 15px 0px 15px;
+position:absolute;
+top:27px;
+left:400px;
+}
+
+#company img:nth-child(4){
+margin:0px 15px 0px 15px;
+position:absolute;
+top:17px;
+left:640px;
+}
+
+#company a{
+position:absolute;
+top:100px;
+left:810px;
+text-decoration:none;
+font-size:14px;
+color:#5E525E;
+}
+
+#hosting{
+font-family: 'Roboto', sans-serif;
+position:relative;
+height:500px;
+}
+
+#hosting h1{
+text-align:left;
+margin:10px 0px 0px 30px;
+color:white;
+font-size:40px;
+}
+
+#hosting h3{
+text-align:left;
+margin:0px 0px 0px 30px;
+color:white;
+font-size:16px;
+font-weight:700;
+}
+
+#hosting table{
+width:900px;
+margin:20px auto;
+/* border-bottom:1px solid #dbc7a0; */
+}
+
+#hosting table tr{
+height:100px;
+}
+
+#hosting table p{
+color:white;
+}
+
+#hostingPlanButton{
+width:600px;
+margin:0px auto;
+padding-top:30px;
+border-top:1px solid #dbc7a0;
+}
+
+#hostingPlanButton p{
+color:white;
+width:300px;
+float:left;
+padding-left:50px;
+}
+
+#hostingPlanButton input[type="button"]{
+float:left;
+width:160px;
+height:45px;
+background-color:#CC7E00;
+color:white;
+border:4px solid white;
+font-size:22px;
+border-radius:3px;
+}
+
+#hostingPlanButton input[type="button"]:hover{
+background-color:white;
+color:#CC7E00;
+}
+/*
+#domain_input{
+height:60px;
+border:2px solid white;
+border-radius:15px;
+}
+
+#domain_input input[type="text"]{
+background:transparent;
+height:50px;
+width:400px;
+border:none;
+border-right:2px solid white;
+padding: 0px 0px 0px 15px;
+color:white;
+font-size:24px;
+margin:5px;
+}
+
+#domain_input input:-moz-placeholder{
+color:white;
+}
+
+#domain_input input::-moz-placeholder{
+color:white;
+}
+
+#domain_input input::-webkit-input-placeholder{
+color:white;
+}
+
+#domain_input input:ms-input-placeholder{
+color:white;
+}
+
+#domain_input input[type="button"]{
+height:50px;
+width:100px;
+background:transparent;
+border:none;
+}
+*/
+
+/*---------FOOTER---------------------------------------------------------------------------*/
+
+footer{
+width:100%;
+}
+
+#footerUpperSection{
+/* border:1px solid black; */
+width:960px;
+height:400px;
+border-bottom:1px solid white;
+}
+
+#footerUpperLeftPart{
+/* border:1px solid black; */
+width:58%;
+float:left;
+}
+
+#footerUpperTop{
+/* border:1px solid black; */
+height:100px;
+}
+
+#upperTopLeft{
+/* border:1px solid black; */
+width:48%;
+height:100px;
+float:left;
+}
+
+#upperTopRight{
+/* border:1px solid black; */
+width:50%;
+height:100px;
+float:right;
+}
+
+#upperTopRight img{
+float:left;
+}
+
+#upperTopRightInner{
+float:right;
+}
+
+#upperTopRightInner p{
+font-size:14px;
+color:white;
+}
+
+#upperTopRightInner p a{
+color:white;
+}
+
+#footerUpperBottom{
+/* border:1px solid black; */
+height:250px;
+}
+
+#upperBottomLeft{
+/* border:1px solid black; */
+width:48%;
+height:250px;
+float:left;
+}
+
+#upperBottomLeft table{
+width:100%;
+margin:20px auto;
+color:white;
+}
+
+#upperBottomLeft table a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+#upperBottomLeft table th{
+font-size:20px;
+border-bottom:1px solid white;
+text-align:left;
+}
+
+#upperBottomRight{
+/* border:1px solid black; */
+width:48%;
+height:250px;
+float:right;
+}
+
+#footerUpperRightPart{
+/* border:1px solid black; */
+width:40%;
+float:right;
+}
+
+#footerUpperRightTop{
+/* border:1px solid black; */
+height:160px;
+}
+
+#footerUpperRightTop img{
+margin:0px 0px 0px 30px;
+}
+
+#footerUpperRightTop p{
+font-size:14px;
+color:white;
+padding:0px 10px 0px 10px;
+}
+
+#footerUpperRightTop p a{
+color:white;
+}
+
+#footerUpperRightBottom{
+/* border:1px solid black; */
+height:220px;
+}
+
+
+#footerUpperRightBottom table{
+width:90%;
+margin:20px auto;
+color:white;
+}
+
+#footerUpperRightBottom table a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+#footerUpperRightBottom table th{
+font-size:20px;
+border-bottom:1px solid white;
+text-align:left;
+}
+
+
+#footerLowerSection{
+/* border:1px solid black; */
+width:960px;
+margin:0px auto;
+}
+
+.footerParaHeading{
+color:white;
+font-size:16px;
+font-weight:600;
+}
+
+.footerPara{
+color:white;
+font-size:12px;
+font-weight:200;
+}
+
+/*----------------PAGE 2------------------------------------------------------------------------------*/
+
+#page2DomainNameForm{
+background-color:white;
+height:800px;
+}
+
+#page2MidContent{
+/* border:1px solid black; */
+position:relative;
+height:800px;
+font-family: 'Roboto', sans-serif;
+}
+
+#page2OuterFooterBackground{
+background-color:#31302b;
+width:100%;
+height:450px;
+}
+
+#page2DomainNameRegistration h1{
+margin-left:55px;
+font-weight:100;
+font-size:42px;
+color:gray;
+}
+
+#page2DomainNameRegistration h1 span{
+color:#FF8800;
+font-weight:700;
+}
+
+#page2DNForm{
+width:800px;
+margin:20px auto;
+}
+
+#page2DNForm textarea{
+border-radius:10px;
+border:4px solid #FF8800;
+padding:20px;
+font-size:20px;
+}
+
+#page2DNForm td{
+text-align:center;
+}
+
+#page2DNForm tr td p{
+font-weight:700;
+font-size:24px;
+}
+
+#page2DNForm tr td > table{
+width:300px;
+margin:0px auto;
+}
+
+.sAll{
+text-align:left;
+}
+
+#page2DNForm tr td a{
+float:right;
+margin-right:60px;
+color:gray;
+text-decoration:none;
+}
+
+#page2DNForm input[type="submit"]{
+text-align:center;
+height:60px;
+width:150px;
+background-color:orange;
+color:white;
+border:none;
+border-radius:4px;
+font-size:24px;
+margin-top:50px;
+}
+
+/*---------PAGE 3-------------------------------------------------------------------------------------*/
+
+#page3DomainResult{
+background-color:white;
+height:800px;
+}
+
+#page3MidContent{
+/* border:1px solid black; */
+position:relative;
+height:800px;
+margin-top:30px;
+font-family: 'Roboto', sans-serif;
+}
+
+#page3ShoppingCart{
+border:5px solid #FF8800;
+border-radius:10px;
+height:200px;
+}
+
+#page3SCPhoto{
+height:200px;
+width:25%;
+float:left;
+background-color:#FF8800;
+}
+
+#page3SCPhoto img{
+margin:30px 0px 0px 50px;
+}
+
+#page3SelectedDomains{
+height:200px;
+width:45%;
+float:left;
+}
+
+#page3SelectedDomains p{
+color:#7C7C7C;
+font-size:24px;
+margin-left:20px;
+background-color:#CFCFCF;
+border-radius:5px;
+padding-left:15px;
+}
+
+#page3Checkout{
+height:200px;
+width:25%;
+float:right;
+}
+
+#page3Checkout p{
+color:#302E2A;
+margin:50px 0px 0px 30px;
+}
+
+#page3Checkout h2{
+color:#9DFF00;
+font-size:30px;
+margin:0px 0px 0px 30px;
+}
+
+#page3Checkout input[type="button"]{
+border:4px solid #9DFF00;
+background-color:white;
+color:#9DFF00;
+width:160px;
+font-size:22px;
+margin:10px 0px 0px 30px;
+border-radius:8px;
+}
+
+#page3Checkout input[type="button"]:hover{
+background-color:#9DFF00;
+color:white;
+}
+
+
+#page3DomainSuggestions{
+/* border:1px solid black; */
+height:500px;
+}
+
+#page3DomainSuggestions table{
+width:800px;
+margin:0px auto;
+}
+
+#page3DomainSuggestions table td{
+width:150px;
+height:150px;
+border:5px solid #FF8800;
+border-radius:15px;
+padding:0px;
+}
+
+#page3DomainSuggestions table td h3{
+margin:45px 0px 0px 60px;
+}
+
+#page3DomainSuggestions table td p{
+margin:10px 0px 0px 80px;
+color:#CFCFCF;
+}
+
+#page3DomainSuggestions table td input[type="button"]{
+width:230px;
+height:40px;
+margin-top:60px;
+border:none;
+font-size:20px;
+border-radius:10px;
+}
+
+#page3DomainSuggestions table td input[value="Add"]{
+background-color:#9DFF00;
+color:white;
+}
+
+#page3DomainSuggestions table td input[value="Remove"]{
+background-color:#FF5500;
+color:white;
+}
+
+#page3DomainSuggestions table td input[value="Unavailable"]{
+background-color:gray;
+color:white;
+}

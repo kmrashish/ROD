@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Domain Registration India - Domain Search | Domain Name Registration</title>
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+		<script src="js/jQuery.js"></script>
+		<script>
+			$(document).ready(function(){
+				var visibility=false;
+				$("#domainNameInputBox").click(function(){
+					if(visibility==false)
+					{
+						$("#domainNameChooser").show();
+						visibility=true;
+					}
+					else if(visibility==true)
+					{
+						$("#domainNameChooser").hide();
+						visibility=false;
+					}
+				});
+				
+				var check=false;
+				$("#selectAll").click(function(){
+					$(".sAll").prop("checked",this.checked);
+					if(check==false)
+					{
+						$("#chooseDomainName").html("All");
+						check=true;
+					}
+					else
+					{
+						$("#chooseDomainName").html(".net");
+						check=false;
+					}
+				});
+				
+				$(window).resize(function(){
+					var windowWidth = $(window).width();
+					if(windowWidth < 960)
+					{
+						$("#outerMainWrapper").css("width",960);
+					}
+					else
+					{	
+						var wi = $(window).width();
+						$("#outerMainWrapper").css("width",wi);
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="outerMainWrapper">
+			<div id="outerHeaderTopBackground">
+				<div id="upperHeadRight">
+					<input type="button" value="MY ACCOUNT" />
+					<input type="button" value="LIVE CHAT" />
+				</div>
+			</div>
+			<div id="outerHeaderBottomBackground">
+			</div>
+			<div id="outerGetDomainNameBackground">
+			</div>
+			<div id="outerBuyWebsiteOrHostingBackground">
+			</div>
+			<div id="outerCompanyBackground">
+			</div>
+			<div id="outerHostingBackground">
+			</div>
+			<div id="outerFooterBackground">
+			</div>
+		</div>
+		
+		
+		<!--Main Wrapper-->
+		<div id="mainWrapper">
+			
+			<!--Header Section-->
+			<header>
+				<div id="upperHead">
+					<a href="index.html"><img src="images/BR-logo.png"></a>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="getADomain.html">GET A DOMAIN</a>
+							<ul>
+								<li><a href=#>Domain Name Registration</a></li>
+								<li><a href=#>Bulk Domain Registration</a></li>
+								<li><a href=#>Premium Domains</a></li>
+								<li><a href=#>Domain Name Prices</a></li>
+								<li><a href=#>Domain Transfer</a></li>
+								<li><a href=#>Bulk Domain Transfer</a></li>
+								<li><a href=#>Domain WHOIS Lookup</a></li>
+								<li><a href=#>Name Suggestion Tool</a></li>
+								<li><a href=#>Free Addons</a></li>
+							</ul>
+						</li>
+						<li><a href="#">GET HOSTING</a>
+							<ul>
+								<li><a href=#>Linux Hosting</a></li>
+								<li><a href=#>Windows Hosting</a></li>
+								<li><a href=#>WordPress Hosting</a></li>
+								<li><a href=#>CMS Hosting</a></li>
+								<li><a href=#>Ecommerce Hosting</a></li>
+								<li><a href=#>Linux Reseller Hosting</a></li>
+								<li><a href=#>Windows Reseller Hosting</a></li>
+							</ul>
+						</li>
+						<li><a href="#">GET A VPS</a>
+							<ul>
+								<li><a href=#>VPS Hosting</a></li>
+							</ul>
+						</li>
+						<li><a href="#">BUILD A WEBSITE</a>
+							<ul>
+								<li><a href=#>Do It yourself Website Builder</a></li>
+								<li><a href=#>Find Professional Web Designers</a></li>
+								<li><a href=#>Digicerts and SSL</a></li>
+							</ul>
+						</li>
+						<li><a href="#">GET EMAIL</a>
+							<ul>
+								<li><a href=#>Personal Email</a></li>
+								<li><a href=#>Business Email</a></li>
+							</ul>
+						</li>
+						<li><a href="#">PARTNER WITH US</a>
+							<ul>
+								<li><a href=#>Affiliate Program</a></li>
+								<li><a href=#>Design Xchange Program</a></li>
+								<li><a href=#>Refer a Friend Program</a></li>
+								<li><a href=#>Private Labelled Reseller Program</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			
+			<!--Middle Content Section-->
+			<div id="midContent">
+				<h1>India's #1 destination for Websites</h1>
+				<h3>Over 6 million customers trust our platform for Domain Registration, Web Hosting, Website Design and more</h3>
+				
+				<!--First Section Domain Name Registration-->
+				<div id="getDomainName">
+					<h1>Get a <span>Domain Name</span></h1>
+					<p>Includes 2 FREE! Email Accounts and Privacy Protection</p>
+					<form id="domainForm" method="POST" action="domainResult.html">
+						<input id="domainNameInput" type="text" placeholder="Enter your Domain Name" required/>
+						<div id="domainNameInputBox">
+							<p id="chooseDomainName">.net</p>
+							<img src="images/arrow.png" alt="Choose Domain"></img>
+						</div>
+						<div id="domainNameChooser">
+							<input type="checkbox" id="selectAll" value="searchAll">Search All <br/>
+							<div id="popularExtensions">
+							<label>Popular Extensions</label>
+							<table>
+								<tr>
+									<td><input type="checkbox" class="sAll" value=".net" checked="checked"></td><td>net</td>
+									<td><input type="checkbox" class="sAll" value=".com"></td><td>com</td> 
+									<td><input type="checkbox" class="sAll" value=".biz"></td><td>biz</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="sAll" value=".org"></td><td>org</td> 
+									<td><input type="checkbox" class="sAll" value=".co.in"></td><td>co.in</td> 
+									<td><input type="checkbox" class="sAll" value=".in"></td><td>in</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="sAll" value=".me"></td><td>me</td> 
+									<td><input type="checkbox" class="sAll" value=".org"></td><td>org</td> 
+									<td><input type="checkbox" class="sAll" value=".asia"></td><td>asia</td>
+								</tr>
+							</table>
+							</div>
+							
+							<div id="moreExtensions">
+							<label>More Extensions</label><br/>
+							<table>
+								<tr>
+									<td><input type="checkbox" class="sAll" value=".co"></td><td>co</td> 
+									<td><input type="checkbox" class="sAll" value=".info"></td><td>info</td>
+									<td><input type="checkbox" class="sAll" value=".name"></td><td>name</td>										
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="sAll" value=".mobi"></td><td>mobi</td>
+									<td><input type="checkbox" class="sAll" value=".tv"></td><td>tv</td>
+									<td><input type="checkbox" class="sAll" value=".ws"></td><td>ws</td>										
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="sAll" value=".bz"></td><td>bz</td> 
+									<td><input type="checkbox" class="sAll" value=".cc"></td><td>cc</td> 
+									<td><input type="checkbox" class="sAll" value=".net.in"></td><td>net.in</td>
+								</tr>
+							</table>
+							</div>
+						</div>
+						<input id="domainSubmit" type="submit" value="Go">
+					</form>
+					
+					<div id="domainNameRates">
+						<table cellspacing=10>
+							<tr>
+								<td><p>.net</p><h4><strike>&#8377; 700</strike></h4><h2>&#8377; 149</h2></td>
+								<td><p>.com</p><h4><strike>&#8377; 800</strike></h4><h2>&#8377; 639</h2></td>
+								<td><p>.org</p><h4><strike>&#8377; 800</strike></h4><h2>&#8377; 329</h2></td>
+								<td><p>.biz</p><h2>&#8377; 800</h2></td>
+								<td><p>.in</p><h4><strike>&#8377; 600</strike></h4><h2>&#8377; 229</h2></td>
+							<tr>
+						</table>
+					</div>
+					
+					<div id="extraLinks">	
+						<a id="extraLinkOne" href="#">Transfer your Domain Name to Bigrock</a>
+						<a id="extraLinkTwo" href="#">View Domain Price List</a>
+					</div>
+				</div>
+				
+				<!--Second Part Buy Website Hosting or Domain Name-->
+				<div id="buyWebsiteOrHosting">
+					<h1>Get a Website</h1>
+					<h3>Get connected with Top Designers across India</h3>
+					<table>
+						<tr>
+							<td>
+								<img src="images/moneyBag.png">
+							</td>
+							<td>
+								<p>Find designers within your budget</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/india.png">
+							</td>
+							<td>
+								<p>Find designers across India</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/website.png">
+							</td>
+							<td>
+								<p>Get a professionally designed website today!</p>
+							</td>
+						</tr>
+					</table>
+					<div id="buyWebsiteOrHostingRight">
+						<h2>It's Free!</h2>
+						<input type="button" value="Begin Seach">
+					</div>
+				</div>
+				
+				<!--Third Part Bigrock Clients and Social Network Links-->
+				<div id="company">
+					<img src="images/adidas.png">
+					<img src="images/wb.png">
+					<img src="images/yatra.png">
+					<img src="images/star.png">
+					<a href="#">and Many more...</a>
+				</div>
+				
+				<div id="hosting">
+					<h1>Buy Hosting</h1>
+					<h3>Affordable. Reliable. Secure.</h3>
+					<table>
+						<tr>
+							<td>
+								<img src="images/infinity.png">
+							</td>
+							<td>
+								<p>Unlimited Domains, Emails and Space</p>
+							</td>
+							<td>
+								<img src="images/24x7.png">
+							</td>
+							<td>
+								<p>99.9% Uptime and 24x7 Support</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/guarantee.png">
+							</td>
+							<td>
+								<p>30 Day Money Back Guarantee</p>
+							</td>
+							<td>
+								<img src="images/easy.png">
+							</td>
+							<td>
+								<p>Easy to use Control Panels</p>
+							</td>
+						</tr>
+					</table>
+					<div id="hostingPlanButton">
+						<p>Hosting starts from &#8377; 59/month</p>
+						<input type="button" value="View Plan">
+					</div>
+				</div>
+				
+			</div>
+			
+			<!--Footer Section-->
+			<footer>
+				<!--Footer Upper Part-->
+				<div id="footerUpperSection">
+					<div id="footerUpperLeftPart">
+						<div id="footerUpperTop">
+							<div id="upperTopLeft">
+								<img src="images/contact.png">
+							</div>
+							<div id="upperTopRight">
+								<img src="images/tv.png">
+								<div id="upperTopRightInner">
+									<p>BigRock in the Media</p>
+									<p>See our <a href="#">TV ads</a> and <a href="#">Press Page</a></p>
+								</div>
+							</div>
+						</div>
+						<div id="footerUpperBottom">
+							<div id="upperBottomLeft">
+								<table>
+									<th colspan="2">Need Help?</h2>
+									<tr>
+										<td><a href="#">Contact Us</a></td>
+										<td><a href="#">Documentation</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Tech Support</a></td>
+										<td><a href="#">Report Abuse</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">My Account</a></td>
+										<td><a href="#">Careers</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Legal</a></td>
+										<td><a href="#">Sitemap</a></td>
+									</tr>
+									<tr>
+										<td colspan="2"><a href="#">Privacy</a></td>
+									</tr>
+								</table>
+							</div>
+							<div id="upperBottomRight">
+								
+							</div>
+						</div>
+					</div>
+					<div id="footerUpperRightPart">
+						<div id="footerUpperRightTop">
+							<img src="images/payment.png">
+							<p>We also accept Indian Debit Cards and Net Banking. See all supported <a href="#">payment options</a></p>
+						</div>
+						<div id="footerUpperRightBottom">
+							<table>
+									<th colspan="2">Our Products</h2>
+									<tr>
+										<td><a href="#">Register Domain Names</a></td>
+										<td><a href="#">Web Hosting</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Transfer Domain Names</a></td>
+										<td><a href="#">Linux Hosting</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Digital Certificates</a></td>
+										<td><a href="#">Wordpress Hosting</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Web Design</a></td>
+										<td><a href="#">Joomla Hosting</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Email Hosting</a></td>
+										<td><a href="#">VPS Hosting</a></td>
+									</tr>
+									<tr>
+										<td colspan="2"><a href="#">WHOIS Lookup</a></td>
+									</tr>
+								</table>
+						</div>
+					</div>
+				</div>
+				
+				<!--Footer Lower Part-->
+				<div id="footerLowerSection">
+					<p class="footerParaHeading">Welcome to BigRock: An Award-Winning, ICANN-Accredited Domain Name Registrar</p>
+					<p class="footerPara">At BigRock, our mission is to offer world class Domain Registration & Web Hosting products to our customers. Leveraging years of expertise and cutting-edge technology, we offer a comprehensive suite of Domain Name and Web Hosting services such as domain name registration, Email hosting, VPS hosting and more. In addition, to helping you make the most of the web, we also offer various value-added services such as WHOIS lookup , DNS management & Premium Domain sales.</p>
+					
+					<p class="footerParaHeading">Our Services</p>
+					
+					<p class="footerParaHeading">Domain Registration</p>
+					<p class="footerPara">BigRock, India’s #1 Domain registration provider offers tailored domain services to help you meet your business objectives at a very affordable price. Our prices are up to 80% lesser than other registrars and we promise you unmatched value for your money. BigRock gives you the option to transfer and register domain names in all Top Level & Country level Domains, including .com, .net, .org, .biz, .info, .mobi, .in, .co.in, .co.uk, .asia and many others. Offering 24x7 customer support we leave no stone unturned to ensure a world-class experience for our esteemed clients.</p>
+					
+					<p class="footerParaHeading">Web Hosting</p>
+					<p class="footerPara">With over 10 years of experience and powering over 200,000 websites, our Web hosting platform is unarguably among the most trusted in the world. We offered specialized services for all web hosting needs. Our hosting services include Linux hosting, Windows hosting, WordPress hosting, Joomla hosting, Drupal hosting, e-commerce hosting, Reseller Hosting & VPS Hosting.
+
+					Our Domain hosting services ensure optimal performance of your website irrespective of what platform it is built on. We support various programming languages such as PHP v5, Perl, Python and CGI, and we offer affordable web hosting services for personal websites, small business websites, as well as large enterprise portals.</p>
+					
+					<p class="footerParaHeading">Email Hosting</p>
+					<p class="footerPara">Trusted by over a million subscribers, our Email hosting services enables you to use personalized official email addresses to exhibit the proficiency of your business. Moreover, personalized email accounts promote your brand every time you send out an email.
+
+					For small business owners, BigRock offers Business Email Hosting package while for corporates and large enterprises, we have an Enterprise Email Hosting package. Our Email Hosting plan comes with unlimited email accounts (2 GB space each) that come with anti-virus and anti-spam protection.</p>
+					
+					<p class="footerParaHeading">DIY Website Builder</p>
+					<p class="footerPara">At BigRock, we acknowledge that nobody can understand the requisites of your website like you. Hence, to give you complete freedom to create extremely appealing and efficient websites, we offer a feature laden Do It Yourself website builder. All you need to do is explore the various templates and tools bundled with the solution and make the most of your creativity. If you have the time, we have the tools! If you are looking specifically for a web design consultant to create a great website for you than we have a solution for that as well; our online web design marketplace, DesignXchange allows you to look for website designers within your city and budget in just a click.</p>
+					
+					<p class="footerParaHeading">Need Help?</p>
+					<p class="footerPara">For detailed information on our domain name & Web hosting services, please call us at 1-800-200-7625/022 30797900 or click on the &#39;Live Chat&#39; button at the top of the page.</p>
+				</div>
+			</footer>
+			
+		</div>
+	</body>
+</html>
